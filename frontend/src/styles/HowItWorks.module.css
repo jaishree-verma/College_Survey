@@ -1,0 +1,89 @@
+.how {
+  padding: 60px 20px;
+  background-color: #000;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #fa0707;
+  font-weight:bold;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #000;
+  line-height: 1.6;
+  font-weight:bold;
+}
+
+/* Bot box centered below grid */
+.botBox {
+  margin-top: 60px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight:bold;
+}
+
+.botBox h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.botBox p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.botButton {
+  background-color: #fa0707;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  font-weight:bold;
+}
+
+.botButton:hover {
+  background-color: #fa0707;
+}

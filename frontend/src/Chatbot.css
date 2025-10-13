@@ -1,0 +1,334 @@
+/* 
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chatbot-wrapper.landing-style {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-avatar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  padding: 8px;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  border: 2px solid #ff000098;
+  transition: transform 0.2s ease;
+}
+
+.avatar-img:hover {
+  transform: scale(1.1);
+}
+
+.avatar-img.landing-avatar {
+  width: 80px;
+  height: 80px;
+  animation: wave 1.5s infinite ease-in-out;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+  border: 2px solid #ff000098;
+}
+
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.chat-container {
+  width: 320px;
+  height: 420px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #000000;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+
+.chat-container.landing-chat {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 360px;
+  height: auto;
+  max-height: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  background-color: #1a1a1a;
+  border: 2px solid #ff0000;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #000000;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 20px;
+  max-width: 80%;
+  color: white;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background-color: #ff0000;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.bot {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.chat-input {
+  display: flex;
+  padding: 15px;
+  background: #000000;
+  border-top: 3px solid #ffffff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background: #ff0000;
+  color: white;
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  cursor: pointer;
+} */
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.chatbot-wrapper.landing-style {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.chat-avatar {
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.avatar-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  padding: 8px;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+  border: 2px solid #ff000098;
+  transition: transform 0.2s ease;
+}
+
+.avatar-img:hover {
+  transform: scale(1.1);
+}
+
+.avatar-img.landing-avatar {
+  width: 80px;
+  height: 80px;
+  animation: wave 1.5s infinite ease-in-out;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 0 30px rgb(255, 0, 0);
+  border: 2px solid #ff000098;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.chat-container {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #000000;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+}
+
+.chat-container.landing-chat {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  height: 400px;
+  max-height: 500px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  background-color: #1a1a1a;
+  border: 2px solid #ff0000;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #e9dcdc;
+}
+
+.message {
+  margin: 8px 0;
+  padding: 10px 14px;
+  border-radius: 20px;
+  max-width: 80%;
+  color: white;
+  word-wrap: break-word;
+}
+
+.message.user {
+  background-color: #000000;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.message.bot {
+  background-color: #ff0000;
+  border: 2px solid #ff0000;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.chat-input {
+  display: flex;
+  padding: 15px;
+  background: #000000;
+  border-top: 3px solid #ffffff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  outline: none;
+  background-color: #e9dcdc;
+  color: rgb(0, 0, 0);
+}
+
+.chat-input button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  background: #ff0000;
+  color: white;
+  border: 2px solid #ff0000;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.avatar-with-bubble {
+  position: relative;
+  display: inline-block;
+}
+
+.chat-bubble {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background-color: #ffffff;
+  color: #ff0000;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  white-space: nowrap;
+  animation: fadeIn 1s ease forwards;
+  z-index: 9999;
+}
+.chat-intro {
+  padding: 15px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 15px;
+  border-bottom: 2px solid #ff0000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: inset 0 -1px 0 #ff0000;
+}
+
+.chat-intro p {
+  margin: 5px 0;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.faq-dropdown {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 2px solid #ff0000;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 13px;
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+  box-shadow: 0 0 8px rgb(255, 0, 0);
+  transition: border-color 0.3s ease;
+}
+
+.faq-dropdown:hover,
+.faq-dropdown:focus {
+  border-color: #ff3333;
+  outline: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

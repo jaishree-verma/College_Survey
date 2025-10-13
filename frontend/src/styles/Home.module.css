@@ -1,0 +1,99 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fulldivider {
+  margin: 0;
+  width: 100vw;
+  border: none;
+  border-top: 3px solid #ffffff;
+  position:relative;
+  margin-top:-30px;
+  left:0;
+}
+.header {
+  background-color: #000;
+  padding: 50px 50px;
+  text-align: center;
+  color: #ffffff;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  z-index:0;
+}
+
+
+/* Header text */
+.header h1 {
+  margin: 0;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header p {
+  margin: 10px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+.introText {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 10px auto; /* centers horizontally */
+  max-width: 90%;    /* optional: keeps it readable on smaller screens */
+}
+
+/* Auth section background */
+.authSection {
+  background-color: #000;
+  text-align: center;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+/* Buttons container */
+.buttons {
+  margin: 20px 0;
+}
+
+/* Button styling */
+.buttons button {
+  background: rgb(253, 0, 0);
+  color: white;
+  padding: 8px 20px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Pop-out on hover */
+.buttons button:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 8px 20px rgba(246, 234, 174, 0.4);
+  background-color: #ff0000; /* Optional: match header on hover */
+}
+.imageWrap {
+  margin-top: 20px;     /* reduce this to move image up */
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.surveyImage {
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}

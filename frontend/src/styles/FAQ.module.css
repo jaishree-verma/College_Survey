@@ -1,0 +1,72 @@
+.faq {
+  padding: 40px 40px; /* Equal left/right spacing */
+  background-color: #000;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin-bottom: 40px; /* Space between heading and grid */
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 boxes per row */
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff; /* Matches Features section */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #ff0303;
+  font-weight: 900;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #000;
+  margin-top: 20px;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.active p {
+  opacity: 1;
+  max-height: 200px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

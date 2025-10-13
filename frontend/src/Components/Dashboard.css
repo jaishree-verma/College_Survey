@@ -1,0 +1,145 @@
+/* /* .dashboard-wrapper {
+  background-color: #ffffff;
+  height: 100vh;
+  overflow: hidden;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-wrapper h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.dashboard-wrapper p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.dashboard-form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.dashboard-form button {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #fb0000ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-form button:hover {
+  background-color: #d40000;
+} */
+.dashboard-wrapper {
+  background-color: #ffffff;
+  height: calc(85vh - 64px); /* Adjust if your navbar height is different */
+  overflow: hidden;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.dashboard-wrapper h1 {
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem 0; /* top and bottom spacing */
+  color: #000000;
+}
+
+.dashboard-wrapper p {
+  font-size: 1.4rem;
+  color: #3c3c3c;
+  margin-bottom: 2.3rem; /* reduced spacing below subtext */
+}
+
+.dashboard-form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-form input {
+  width: 100%;
+  padding: 40px; /* reduced padding for cleaner look */
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 6px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.dashboard-form button {
+  margin-top: 1rem; /* reduced space between input and button */
+  padding: 10px 20px; /* smaller button size */
+  background-color: #fb0000ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-form button:hover {
+  background-color: #ff0404;
+}
+@media (max-width: 768px) {
+  .dashboard-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .dashboard-wrapper p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .dashboard-form input {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .dashboard-form button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard-wrapper {
+    padding: 1rem;
+  }
+
+  .dashboard-form {
+    max-width: 100%;
+  }
+
+  .dashboard-form input {
+    padding: 16px;
+  }
+}

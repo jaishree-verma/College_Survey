@@ -1,0 +1,13 @@
+# Node modules
+node_modules/
+# Python virtual environments
+backend/rasaenv/
+# Rasa cache and models
+backend/rasa_bot/.rasa/
+backend/rasa_bot/models/
+# Environment variables
+*.env
+# VS Code settings
+.vscode/
+# Logs
+*.log
