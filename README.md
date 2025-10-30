@@ -4,6 +4,48 @@
 <p>Leveraging a modern MERN architecture (MongoDB, Express, React, Node.js) and integrated with a Rasa-powered chatbot enhanced by Hugging Face NLP, the platform facilitates real-time, conversational data collection and personalized guidance.</p>
 
 
+### What technologies being used :
+#### AI ChatBot (Rasa & Hugging Face)\
+     -> Rasa 
+        -> Used to build the conversational chatbot logic.
+        -> Handles intent recognition, dialogue flow, and custom actions.
+     -> Hugging Face
+        -> Integrated with Rasa to enhance natural language understanding.
+        -> Provides contextual, intelligent responses beyond rule-based replies
+#### Backend 
+      -> Node.js + Express
+         -> Hosts the backend server and REST APIs.
+         -> Manages survey data, user sessions, and chatbot communication.
+      -> MongoDB
+         -> Stores user responses, survey results, and chatbot logs.
+         -> Enables flexible schema for evolving data needs.
+#### Frontend 
+      -> JavaScript
+         -> Handles API calls and chatbot integration.
+      -> React
+         -> Manages chatbot interactions, survey forms, and dashboard views.
+      -> Tailwind CSS
+         -> Enables responsive design and fast UI prototyping.
+         
+### How to run locally :
+#### Clone Repo 
+      -> git clone https://github.com/jaishreeverma2004/college_survey.git
+      -> cd college_survey
+#### Frontend 
+      -> cd frontend
+      -> npm install
+      -> npm start
+#### Backend 
+      -> cd ../backend
+      -> npm install
+      -> node server.js
+#### Chatbot 
+      -> cd ../rasa_bot
+      -> python -m venv rasaenv     (virtual environment)
+      -> .\rasaenv\Scripts\activate (# for windows)
+      -> pip install rasa           (Install Rasa % dependencies)
+      -> rasa train                 (Train model)
+      -> rasa run                   (Final run)
 
 
 
@@ -27,30 +69,3 @@
 
 
 
-
-<!-- <h1 align="center">College Survey - Rasa + Hugging Face + JavaScript + React + Tailwind + MongoDB + NodeJS  </h1>
-
-<p><strong>College Survey</strong> is a full-stack AI-powered chatbot platform designed to assist college-bound students with personalized guidance. Built using Rasa for conversational logic and Hugging Face for intelligent responses, it helps users explore hostel facilities, placement stats, scholarships, and more—all through natural language interaction.</p>
-
-
-<p>Live Deployment</p>
-
-🔗 *Visit*: [https://college_survey.vercel.app](https://college_survey.vercel.app)  
-
-## 📦 How to Run Locally
-
-```bash
-git clone https://github.com/jaishreeverma2004/college_survey.git
-cd college_survey
-cd frontend
-npm install
-npm start
-cd ../backend
-npm install
-node server.js
-cd rasa_bot
-python -m venv rasaenv
-.\rasaenv\Scripts\activate   # For Windows
-pip install rasa
-rasa train
-rasa run -->
