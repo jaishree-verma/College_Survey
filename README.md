@@ -48,12 +48,12 @@
       -> rasa run                   (Final run)
 ### Sumary 
 
-|     Category    |                             Description                                        |
+|     Category     |                             Description                                       |
 |------------------|-------------------------------------------------------------------------------|
 | Project Name     | College Survey                                                                |
 | Purpose          | AI-powered chatbot platform for student guidance and survey visualization     |
 | Tech Stack       | Rasa, Hugging Face, React, Tailwind CSS, Node.js, MongoDB                     |
-| Frontend         | React + Tailwind (Vite), deployed via Vercel                                  |
+| Frontend         | React + Tailwind (Vite)                                  |
 | Backend          | Node.js + Express, REST API, MongoDB for data storage                         |
 | Chatbot          | Rasa framework with Hugging Face NLP, exposed via REST webhook                |
 | Deployment       | Frontend: Vercel<br>Backend: Render/Railway<br>Chatbot: Local/VM/ngrok        |
