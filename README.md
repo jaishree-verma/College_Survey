@@ -46,11 +46,10 @@
       -> rasa train                 (Train model)
       -> rasa run                   (Final run)
 
-```
 Frontend :
 Backend  :
 Final    : 
-```
+
 ### Sumary 
       |     Category     |                             Description                                       |
       |------------------|-------------------------------------------------------------------------------|
