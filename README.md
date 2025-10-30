@@ -47,17 +47,7 @@
       -> rasa train                 (Train model)
       -> rasa run                   (Final run)
 
-
-
-
-
-
-
-
-
-
-
-
+### Sumary 
 
 
 
