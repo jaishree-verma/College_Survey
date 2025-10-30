@@ -3,6 +3,7 @@
 ## Live : 
 
 
+
 College Survey is an AI-driven, full-stack web application designed to streamline academic decision-making for undergraduate students. Its intuitive design and data visualization tools empower institutions to analyze student preferences at scale, achieving over 95% participation and 1,000+ unique engagements.</p>
 
 <p>Leveraging a modern MERN architecture (MongoDB, Express, React, Node.js) and integrated with a Rasa-powered chatbot enhanced by Hugging Face NLP, the platform facilitates real-time, conversational data collection and personalized guidance.</p>
