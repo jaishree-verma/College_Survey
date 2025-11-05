@@ -1,10 +1,10 @@
 /* src/styles/AboutCollegeSurvey.module.css */
 
 .about {
-  background-color: #000;
+  background-color: #e2f2f8;
   padding: 60px 20px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   min-height: 100vh;
 }
 
@@ -12,7 +12,7 @@
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: #006efe;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
@@ -24,7 +24,7 @@
   margin: 0 auto 30px;
   line-height: 1.6;
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: #000000;
 }
 
 .points {
@@ -44,7 +44,7 @@
 }
 
 .points li strong u {
-  color: #ff0202;
+  color: #006efe;
   text-decoration: underline;
   text-underline-offset: 4px;
   font-weight: 600;

@@ -10,18 +10,21 @@ export default function Home() {
     <main className="container">
       {/* Full-width header */}
       <header className={styles.header}>
-        <h1 style={{ color: 'red', fontSize: '40px' }}>College Survey</h1>
+        <h1 style={{color:'#006efe',fontSize: '50px'}}>College Survey</h1>
 
-        <p>Welcome! Please login or sign up to continue.</p>
+        <p>College Based AI survey designed for students by a student to answer major queries faced during admission process. </p>
+        <p>Ready to experience AI Smarter Surveys?</p>
       </header>
 
-      <hr className={styles.fulldivider} />
+      {/* <hr className={styles.fulldivider} /> */}
 
       {/* Image section */}
       <div className={styles.imageWrap}>
         <img src={surveyImage} alt="AI Powered Survey" className={styles.surveyImage} />
       </div>
-      <p className={styles.introText}>Ready to experience AI Smarter Surveys?</p>
+      <p className={styles.introText}>Ready to experience AI Smarter Surveys?
+        Please login or signup to continue .
+      </p>
       
       {/* Auth section with dark background */}
       <section className={styles.authSection}>

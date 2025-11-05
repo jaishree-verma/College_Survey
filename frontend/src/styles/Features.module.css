@@ -1,15 +1,15 @@
 .features {
-  background-color: #000;
+  background-color: #e2f2f8;
   padding: 0px 0px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .features h2 {
   font-size: 2.5rem;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
+  color: #006efe;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
@@ -41,7 +41,7 @@
 .card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #ff0303;
+  color: #006efe;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -62,5 +62,7 @@
 .description p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #000;
+  color: #000000;
+  font-weight:bold;
+  
 }

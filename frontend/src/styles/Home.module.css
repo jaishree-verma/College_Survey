@@ -1,25 +1,27 @@
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: #000;
+  padding: 0rem;
+  background-color: #e9f4f8;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  
 }
 
-.fulldivider {
+/* .fulldivider {
   margin: 0;
   width: 100vw;
   border: none;
-  border-top: 3px solid #ffffff;
+  border-top: 3px solid #e2f2f8;
   position:relative;
   margin-top:-30px;
   left:0;
-}
+} */
 .header {
-  background-color: #000;
+  background-color: #e2f2f8;
   padding: 50px 50px;
   text-align: center;
-  color: #ffffff;
+  color: #000000;
   width: 100vw;
   margin: 0;
   box-sizing: border-box;
@@ -43,7 +45,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 .introText {
-  color: #ffffff;
+  color: #000000;
   font-size: 18px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
@@ -54,7 +56,7 @@ body {
 
 /* Auth section background */
 .authSection {
-  background-color: #000;
+  background-color: #e2f2f8;
   text-align: center;
   width: 100vw;
   box-sizing: border-box;
@@ -67,7 +69,7 @@ body {
 
 /* Button styling */
 .buttons button {
-  background: rgb(253, 0, 0);
+  background: #0648fd;
   color: white;
   padding: 8px 20px;
   margin: 0 20px;
@@ -82,11 +84,11 @@ body {
 .buttons button:hover {
   transform: scale(1.1) translateY(-5px);
   box-shadow: 0 8px 20px rgba(246, 234, 174, 0.4);
-  background-color: #ff0000; /* Optional: match header on hover */
+  background-color: #006efe; /* Optional: match header on hover */
 }
 .imageWrap {
-  margin-top: 20px;     /* reduce this to move image up */
-  margin-bottom: 20px;
+  margin-top: -19px;     /* reduce this to move image up */
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
 }
