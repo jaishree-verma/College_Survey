@@ -50,11 +50,6 @@ College Survey is an AI-driven, full-stack web application designed to streamlin
       -> rasa train                 (Train model)
       -> rasa run                   (Final run)
 
-Frontend :
-
-Backend  :
-
-Final     : 
 
 ### Sumary 
       |     Category     |                             Description                                       |
