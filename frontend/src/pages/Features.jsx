@@ -63,10 +63,10 @@ const featuresData = [
     title: 'Instant Results',
     description: 'Get feedback in realtime - no delays, no waiting.'
   },
-  {
-    title: 'AI-Powered Questions',
-    description: 'Smart, adaptive surveys that respond to user input.'
-  },
+  // {
+  //   title: 'AI-Powered Questions',
+  //   description: 'Smart, adaptive surveys that respond to user input.'
+  // },
   {
     title: 'Mobile Friendly',
     description: 'Designed for phones, tablets, and every screen size.'

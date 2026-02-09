@@ -30,7 +30,7 @@ export default function AboutCollegeSurvey() {
     <section className={`container ${styles.about}`} id="about-college-survey">
       <h2><u><strong>About College Survey</strong></u></h2>
       <p className={styles.intro}>
-        College Survey is a modern, AI-powered feedback platform designed to help institutions truly understand their students. Here's what makes it stand out:
+        College Survey is a modern, feedback platform designed to help institutions truly understand their students. Here's what makes it stand out:
       </p>
       <ul className={styles.points}>
         <li><strong><u>AI-Driven Insights:</u></strong> Instantly analyzes student feedback to uncover trends and actionable data.</li>
