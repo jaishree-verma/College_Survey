@@ -1,59 +1,6 @@
-/* /* .dashboard-wrapper {
-  background-color: #ffffff;
-  height: 100vh;
-  overflow: hidden;
-  padding: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.dashboard-wrapper h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #333;
-}
-
-.dashboard-wrapper p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.dashboard-form {
-  width: 100%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-}
-
-.dashboard-form input {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-}
-
-.dashboard-form button {
-  margin-top: 1rem;
-  padding: 10px 20px;
-  background-color: #fb0000ff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.dashboard-form button:hover {
-  background-color: #d40000;
-} */
 .dashboard-wrapper {
   background-color: #ffffff;
-  height: calc(85vh - 64px); /* Adjust if your navbar height is different */
+  height: calc(86vh - 100px); 
   overflow: hidden;
   padding: 2rem;
   font-family: 'Montserrat', sans-serif;
@@ -66,7 +13,7 @@
 
 .dashboard-wrapper h1 {
   font-size: 2.5rem;
-  margin: 2rem 0 1rem 0; /* top and bottom spacing */
+  margin: 2rem 0 1rem 0; 
   color: #000000;
 }
 
@@ -97,7 +44,7 @@
 .dashboard-form button {
   margin-top: 1rem; /* reduced space between input and button */
   padding: 10px 20px; /* smaller button size */
-  background-color: #fb0000ff;
+  background-color: #0066ff;
   color: #ffffff;
   border: none;
   border-radius: 6px;
@@ -107,7 +54,7 @@
 }
 
 .dashboard-form button:hover {
-  background-color: #ff0404;
+  background-color: #0066ff;
 }
 @media (max-width: 768px) {
   .dashboard-wrapper h1 {

@@ -1,150 +1,6 @@
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #040404;
-  padding: 1rem 2rem;
-  color: white;
-}
-
-.logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff4c4c;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #ff4c4c;
-}
-
-.user-menu {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logout-btn {
-  background-color: #ff4c4c;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-} */
-/* .navbar {
-  background-color: #000000;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo a {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #fe0000;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.nav-links a:hover {
-  color: #ff4c4c;
-}
-
-.user-menu {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.logout-btn {
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-} */
-/* .navbar {
-  background-color: #000000;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo a {
-  font-size: 1.9rem;
-  font-weight: bold;
-  color: #fc0000;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav-links a:hover {
-  color: #ff0000;
-}
-
-.user-menu {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logout-btn {
-  background-color: #ff0000;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-} */
 .navbar {
-  background-color: #000;
-  color: white;
+  background-color: #e2f2f8;
+  color: #0066ff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -158,7 +14,7 @@
 .logo a {
   font-size: 1.9rem;
   font-weight: bold;
-  color: #fc0000;
+  color: #0066ff;
   text-decoration: none;
 }
 
@@ -171,14 +27,14 @@
 }
 
 .nav-links a {
-  color: white;
+  color: #0066ff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #ff0000;
+  color: #0066ff;
 }
 
 .user-menu {
@@ -188,7 +44,7 @@
 }
 
 .logout-btn {
-  background-color: #ff0000;
+  background-color: #0066ff;;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
@@ -199,7 +55,7 @@
 }
 
 .logout-btn:hover {
-  background-color: #d40000;
+  background-color: #0066ff;
 }
 
 /* ✅ Optional: Responsive layout for smaller screens */

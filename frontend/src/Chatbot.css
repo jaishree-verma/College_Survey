@@ -53,12 +53,12 @@
 }
 
 .chat-container {
-  width: 300px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   background-color: rgb(255, 255, 255);
   border: 2px solid #ffffff;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  /* box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); */
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -71,12 +71,12 @@
   position: fixed;
   bottom: 80px;
   right: 20px;
-  width: 300px;
-  height: 400px;
+  width: 390px;
+  height:490px;
   max-height: 500px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-  background-color: #1a1a1a;
-  border: 2px solid #cccbcb;
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.3); */
+  background-color: #e2f2f8;
+  border: 1px solid #000000;
 }
 
 .chat-window {
@@ -90,20 +90,20 @@
   margin: 8px 0;
   padding: 10px 14px;
   border-radius: 20px;
-  max-width: 80%;
-  color: rgb(255, 255, 255);
+  max-width: 90%;
+  color: rgb(69, 69, 69);
   word-wrap: break-word;
 }
 
 .message.user {
-  background-color: #2998f9;
+  background-color: #e2f2f8;
   align-self: flex-end;
   text-align: right;
 }
 
 .message.bot {
-  background-color: #2998f9;
-  border: 2px solid #ffffff;
+  background-color: #e2f2f8;
+  /* border: 1px solid #0062ff; */
   align-self: flex-start;
   text-align: left;
 }
@@ -112,7 +112,7 @@
   display: flex;
   padding: 15px;
   background: #ffffff;
-  border-top: 3px solid #000000;
+  border-top: 2px solid #000000;
 }
 input::placeholder {
   color: white;
@@ -150,7 +150,7 @@ input::placeholder {
   color: #000000;
   padding: 8px 12px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size:14px;
   font-weight: 500;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   white-space: nowrap;
@@ -159,8 +159,8 @@ input::placeholder {
 }
 .chat-intro {
   padding: 15px 10px;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: #e2f2f8;
+  color: #000000;
   font-size: 15px;
   border-bottom: 2px solid #000000;
   border-top-left-radius: 10px;

@@ -1,86 +1,7 @@
-/* .ask-page {
-  padding: 2rem;
-  background-color: #ffffff;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  min-height: calc(100vh - 64px);
-}
-
-h1, h2 {
-  color: rgb(0, 0, 0);
-  margin-bottom: 1.5rem;
-}
-
-.featured-list {
-  list-style: none;
-  padding: 0;
-  margin-bottom: 2rem;
-}
-
-.featured-list li {
-  background-color: #000000;
-  padding: 0.75rem;
-  margin-bottom: 0.5rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.featured-list li:hover {
-  background-color: #fb0000ff;
-  color: #ffffff;
-}
-
-.dropdown-section {
-  margin-bottom: 2rem;
-}
-
-.dropdown-section select {
-  padding: 0.5rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-}
-
-.answer-box {
-  margin-top: 1rem;
-  background-color: #1a1a1a;
-  padding: 1rem;
-  border-radius: 6px;
-  color: rgb(255, 255, 255);
-}
-
-.ask-input-section {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.ask-input-section input {
-  padding: 0.75rem;
-  border-radius: 6px;
-  border: none;
-  font-size: 1rem;
-}
-
-.ask-input-section button {
-  background-color: #fb0000ff;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.ask-input-section button:hover {
-  background-color: #ff3b3b;
-} */
 .ask-page {
   padding: 1rem;
   background-color: #ffffff;
-  color: #ffffff;
+  color: #000000;
   font-family: 'Montserrat', sans-serif;
   min-height: calc(100vh - 64px);
   display: flex;
@@ -112,7 +33,7 @@ h2{
 }
 
 .featured-list li {
-  background-color: #000000;
+  background-color: #c6dcf6;
   padding: 0.75rem;
   margin-bottom: 0.5rem;
   border-radius: 6px;
@@ -121,8 +42,8 @@ h2{
 }
 
 .featured-list li:hover {
-  background-color: #fb0000ff;
-  color: #ffffff;
+  background-color: #c6dcf6;
+  color: #000000;
 }
 
 .dropdown-section {
@@ -131,6 +52,7 @@ h2{
   width: 100%;
   max-width: 600px;
   text-align: center;
+  
 }
 
 .dropdown-section select {
@@ -143,10 +65,10 @@ h2{
 
 .answer-box {
   margin-top: 1rem;
-  background-color: #ff0000;
+  background-color: #c6dcf6;
   padding: 0.3rem;
   border-radius: 6px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   max-width: 600px;
   text-align: center;
 }
@@ -190,7 +112,7 @@ h2{
 }
 
 .query-box button {
-  background-color: #fb0000ff;
+  background-color: rgb(0, 117, 251);
   color: white;
   border: none;
   padding: 0.5rem 1.5rem; /* ✅ Balanced size */
@@ -202,12 +124,12 @@ h2{
 }
 
 .query-box button:hover {
-  background-color: #ff3b3b;
+  background-color: rgb(0, 117, 251);
 }
 
 
 .query-box button:hover {
-  background-color: #ff3b3b;
+  background-color: rgb(0, 117, 251);
 }
 @media (max-width: 768px) {
   h1 {
