@@ -179,7 +179,7 @@ export default function App() {
           }
         />
 
-        <Route
+        {/* <Route
           path="/ask"
           element={
             isLoggedIn ? (
@@ -188,7 +188,7 @@ export default function App() {
               <Navigate to="/login" />
             )
           }
-        />
+        /> */}
 
         <Route
           path="/my-surveys"

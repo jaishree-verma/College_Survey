@@ -1,3 +1,4 @@
+// this stores user information, including email, password, OTP for verification, and verification status.
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema({

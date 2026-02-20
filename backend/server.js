@@ -1,7 +1,6 @@
 require("dotenv").config({ path: __dirname + "/.env" });
 
 console.log("✅ ENV Loaded:", process.env);
-
 console.log("✅ MONGO_URI:", process.env.MONGO_URI);
 console.log("✅ GOOGLE_CLIENT_ID:", process.env.GOOGLE_CLIENT_ID);
 
@@ -15,7 +14,7 @@ const cors = require("cors");
 const session = require("express-session");
 const passport = require("passport");
 
-const app = express();
+const app = express(); // ✅ app initialized before use
 const PORT = process.env.PORT || 5000;
 
 // 🔧 Middleware
@@ -40,10 +39,12 @@ app.use((req, res, next) => {
 // 📦 Routes
 const userRoutes = require("./routes/api");
 app.use("/api", userRoutes);
-const chatbotRoutes = require("./routes/chatbot");
-app.use("/api", chatbotRoutes);
 
 
+
+// ✅ Add survey route here
+const surveyRoutes = require("./routes/survey");
+app.use("/api/survey", surveyRoutes);
 
 // 🗃 MongoDB Connection
 mongoose.connect(process.env.MONGO_URI, {

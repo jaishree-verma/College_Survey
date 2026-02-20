@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <ul className="nav-links">
         <li><Link to="/dashboard">Dashboard</Link></li>
-        <li><Link to="/ask">Ask a Question</Link></li>
+        {/* <li><Link to="/ask">Ask a Question</Link></li> */}
         <li><Link to="/my-surveys">My Surveys</Link></li>
       </ul>
 
