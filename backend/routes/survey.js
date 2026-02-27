@@ -1,30 +1,30 @@
 const express = require("express");
-const SurveyHistory = require("../models/SurveyHistory");
-const sendSurveyEmail = require("../utils/mailer");
+const { notifyCollegeSurvey, sendResponseToStudent } = require("../utils/mailer");
 
 const router = express.Router();
 
-// Submit a query
 router.post("/", async (req, res) => {
   const { userId, question } = req.body;
 
-  // Generate answer (replace with Rasa or backend logic later)
-  const answer = "Sample answer from backend"; 
-  const surveyType = "General"; 
+  let answer;
 
-  // Save history
-  const entry = await SurveyHistory.create({ userId, question, answer, surveyType });
+  // Step 1: Try to find answer in FAQ (optional)
+  const faqAnswer = null; // replace with DB lookup if you want
 
-  // Send email with PDF
-  await sendSurveyEmail(userId, question, answer, surveyType);
+  if (faqAnswer) {
+    answer = faqAnswer;
+  } else {
+    // Step 2: Unknown query → forward to college survey inbox
+    await notifyCollegeSurvey(userId, question);
 
-  res.json({ message: "Answer sent to your registered mail ID", entry });
-});
+    // Step 3: Acknowledge student
+    answer = "Your query has been forwarded to the College Survey team. You will receive a response soon.";
+  }
 
-// Fetch history
-router.get("/history/:userId", async (req, res) => {
-  const history = await SurveyHistory.find({ userId: req.params.userId }).sort({ timestamp: -1 });
-  res.json(history);
+  // Step 4: Send response to student
+  await sendResponseToStudent(userId, question, answer);
+
+  res.json({ message: "Query processed. Check your email for details." });
 });
 
 module.exports = router;
