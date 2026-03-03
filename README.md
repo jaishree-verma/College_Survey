@@ -6,13 +6,6 @@ College Survey Application is an AI-driven, full-stack web application designed 
 <p>Leveraging a modern MERN architecture (MongoDB, Express, React, Node.js) and integrated with a Rasa-powered chatbot enhanced by Hugging Face NLP, the platform facilitates real-time, conversational data collection and personalized guidance.</p>
 
 ### What technologies being used :
-#### AI ChatBot (Rasa & Hugging Face)\
-     -> Rasa 
-        -> Used to build the conversational chatbot logic.
-        -> Handles intent recognition, dialogue flow, and custom actions.
-     -> Hugging Face
-        -> Integrated with Rasa to enhance natural language understanding.
-        -> Provides contextual, intelligent responses beyond rule-based replies
 #### Backend 
       -> Node.js + Express
          -> Hosts the backend server and REST APIs.
