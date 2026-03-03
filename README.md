@@ -33,13 +33,6 @@ College Survey Application is an AI-driven, full-stack web application designed 
       -> cd ../backend
       -> npm install
       -> node server.js
-#### Chatbot 
-      -> cd ../rasa_bot
-      -> python -m venv rasaenv     (virtual environment)
-      -> .\rasaenv\Scripts\activate (# for windows)
-      -> pip install rasa           (Install Rasa % dependencies)
-      -> rasa train                 (Train model)
-      -> rasa run                   (Final run)
 
 
 ### Sumary 
