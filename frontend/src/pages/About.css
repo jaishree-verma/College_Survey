@@ -1,0 +1,176 @@
+.about-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+}
+.about-title {
+  font-size: 3.5rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-subtitle {
+  color: #000000;
+  text-align: center;
+  background: #99b2e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.about-points {
+  margin-top: 0rem;
+  padding-left: 1rem;
+  list-style-type: disc;
+  color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.about-points li {
+  margin-bottom: 0.2rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  
+}
+
+.about-points li:hover {
+  transform: translateX(-6px); 
+  color: #007bff; 
+}
+
+
+.about-section {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #99b2e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-section h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  color: #000000;
+  
+}
+
+.about-contact {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px #99b2e9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap: 1rem;
+  
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  transform: translateY(-4px);
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-wrapper {
+    padding: 2rem;
+  }
+}
+.about-stats {
+  display: flex;
+  justify-content: space-evenly; /* spread evenly */
+  gap: 1rem;
+  margin-top: 0rem;
+}
+
+.stat-box {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px #99b2e9;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.stat-box h3 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.stat-subtext {
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box {
+    width: 100%;
+    max-width: 400px;
+  }
+}
