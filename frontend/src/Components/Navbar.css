@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff; /* header background */
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffcc00; /* brand hover color */
+}
+
+/* Links */
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* underline effect */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #ffcc00, #ff6600); /* dynamic underline */
+  transition: width 0.3s ease;
+  transform-origin: left;
+}
+
+/* hover state */
+.navbar-links a:hover {
+  color: #ffcc00; /* text color change */
+}
+
+.navbar-links a:hover::after {
+  width: 100%; /* underline animates in */
+}

@@ -50,14 +50,14 @@ export default function About() {
       <div className="about-stats">
   <div className="stat-box">
     <img src="/up-arrow-icon.png" alt="Survey Responses Icon" className="stat-icon" />
-    <h3>Total Survey Responses</h3>
+    <h3><u>Total Survey Responses</u></h3>
     <p className="stat-number">0</p>
     <span className="stat-subtext">Responses Collected</span>
   </div>
 
   <div className="stat-box">
     <img src="/users-icon.png" alt="Site Visitors Icon" className="stat-icon" />
-    <h3>Total Site Visits</h3>
+    <h3><u>Total Site Visits</u></h3>
     <p className="stat-number">0</p>
     <span className="stat-subtext">Unique Visitors</span>
   </div>
