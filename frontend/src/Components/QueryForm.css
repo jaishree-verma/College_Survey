@@ -1,12 +1,15 @@
 /* Wrapper: two-column layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .query-wrapper {
   display: flex;
   justify-content: space-between; /* image left, form right */
   align-items: flex-start;
-  gap: 3rem;
-  padding: 3rem;
+  gap: 2.5rem;
+  padding: 2rem;
   animation: fadeIn 1s ease-in-out;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Left side image */
@@ -22,7 +25,7 @@
   height: auto;
   border-radius: 12px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.452);
-  margin-top: 80px; /* pushes image down */
+  margin-top: 70px; /* pushes image down */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -35,7 +38,7 @@
 .query-container {
   flex: 1;
   max-width: 650px;
-  padding: 2rem;
+  padding: 1.3rem;
   background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 5px 12px rgba(0, 0, 0, 0.559);
@@ -49,25 +52,30 @@
 .query-title {
   text-align: center;
   color: #000000;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
+  
 
 .query-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
+
 
 .query-form label {
   font-weight: bold;
-  color: #333;
+  color: #000000;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 
 .query-form input,
 .query-form textarea {
-  padding: 1rem;
-  border: 1px solid #1f1f1f;
+  padding: 0.8rem;
+  border: 1px solid #000000;
   border-radius: 6px;
   font-size: 1rem;
   transition: border-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
@@ -75,7 +83,7 @@
 
 .query-form input:focus,
 .query-form textarea:focus {
-  border-color: #007bff;
+  border-color: #000000;
   outline: none;
   transform: translateY(-4px); /* floats up */
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -99,8 +107,8 @@
 }
 
 .query-form button:hover {
-  background-color: #007bff;
-  transform: translateY(-4px); /* floats up */
+   background-color: #0056b3;
+  transform: translateY(-4px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.25);
 }
 
