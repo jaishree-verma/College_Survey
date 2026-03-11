@@ -1,0 +1,45 @@
+.footer {
+  background: #c7e0fbbe;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000;
+  font-weight: bold;
+  margin-top: 1rem;
+ 
+  /* border-top: 2px solid #4b8af7; */
+}
+
+.footer-links {
+  margin-top: 0rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+}
+
+.footer-links a:hover {
+  color: #4b8af7;
+  transform: translateY(-8px) scale(1.02);
+}
+button {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: #4b8af7;
+}

@@ -6,57 +6,66 @@
   flex-direction: column;
   gap: 2rem;
   align-items: center;
- font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000000;
   animation: fadeIn 1s ease-in-out;
 }
 
 .result-title {
-  font-size: 3.1rem;
+  font-size: 2.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #000000;
   text-align: center;
   font-weight: bold;
   position: relative;
   letter-spacing: 1px;
+   
+  font-weight: 700;
 }
 
 .result-title::after {
   content: "";
   display: block;
   width: 80px;
-  height: 3px;
+  height: 4px;
   background: linear-gradient(90deg, #007bff, #00c6ff);
   margin: 0.5rem auto 0;
   border-radius: 2px;
   animation: slideIn 1s ease forwards;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Pie charts container */
+
 .result-pies {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  align-items: stretch;
+  gap: 2rem;
   width: 200%;
   flex-wrap: wrap;
-  animation: fadeInUp 1.2s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .pie-container {
   flex: 1;
-  max-width: 300px;
+  max-width: 260px;
   background: linear-gradient(135deg, #f9f9f9, #eef3ff);
   padding: 1rem;
   border-radius: 14px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
   text-align: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
 
 .pie-container:hover {
   transform: translateY(-6px) scale(1.05);
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #c7e0fbbe);
 }
+
 
 .pie-container h2 {
   color: #000000;
@@ -65,6 +74,7 @@
   font-size: 1.5rem;
   font-weight: 600;
   transition: color 0.3s ease;
+  
 }
 
 .pie-container:hover h2 {
@@ -87,6 +97,7 @@
   transform: scale(1.02);
   /* box-shadow: 0 4px 12px #99b2e9; */
   box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #c7e0fbbe);
 }
 
 /* Animations */
@@ -118,5 +129,70 @@
 
   .bar-container {
     min-height: 350px;
+  }
+}
+
+
+/* Summary box */
+.summary-box {
+  flex: 0 0 220px; /* fixed width so it doesn’t grow too much */
+  background: linear-gradient(135deg, #ffffff, #e6f0ff);
+  padding: 1rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summary-box:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.681);
+  background: linear-gradient(135deg, #c7e0fbbe);
+}
+
+.summary-box h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.summary-box:hover h2 {
+  color: #0056b3;
+}
+
+.summary-box p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.summary-box:hover p {
+  color: #111;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .result-pies {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pie-container {
+    max-width: 240px;
+  }
+
+  .summary-box {
+    flex: 1;
+    max-width: 300px;
+    margin: 1rem 0;
   }
 }

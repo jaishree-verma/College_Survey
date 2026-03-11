@@ -6,23 +6,38 @@
   flex-direction: column;
   gap: 2rem;
   align-items: stretch;
+    position: relative; /* required for ::after underline */
   animation: fadeIn 1s ease-in-out;
 }
+.about-title::after {
+  content: "";
+  display: block;
+  width: 100px;          /* underline length */
+  height: 4px;          /* underline thickness */
+  background: linear-gradient(90deg, #007bff, #00c6ff); /* gradient underline */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+  animation: slideIn 1s ease forwards;
+}
 .about-title {
-  font-size: 3.5rem;
-  color: #000000;
+  font-size: 2.8rem;
+  color: #000;
   margin-bottom: 1rem;
+
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .about-subtitle {
-  color: #000000;
+  color: #000;
   text-align: center;
-  background: #99b2e9;
+  background: #bed0f7;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: 500;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.about-points {
+/* .about-points {
   margin-top: 0rem;
   padding-left: 1rem;
   list-style-type: disc;
@@ -40,61 +55,131 @@
 .about-points li:hover {
   transform: translateX(-6px); 
   color: #007bff; 
-}
 
+} */
 
 .about-section {
   background: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  color:black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.326);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
 }
 
 .about-section h2 {
-  color: #007bff;
+  color: #000000;
   margin-bottom: 1rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.about-section :hover{
-    transform: translateY(-6px); 
+.about-section:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.533);
+   background: linear-gradient(135deg, #c7e0fbbe);
 }
 .about-section p {
   color: #000000;
+  line-height: 1.6;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+/* Stats boxes */
+.about-stats {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin-top: 0rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stat-box {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.452);
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+ background: linear-gradient(135deg, #c7e0fbbe);
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.stat-box h3 {
+  color: #007bff;
+  margin-bottom: 0rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stat-subtext {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contact form */
+.about-contact {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.493);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 
-.about-contact {
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000000;
+.about-contact:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, #c7e0fbbe);
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   gap: 1rem;
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form input,
 .contact-form textarea {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
+  padding: 0.6rem;
+  border: 1.5px solid #ccc;
   border-radius: 6px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color:black;
+  font-weight: bold;
   transition: border-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
+  border-color: #000000;
   outline: none;
   transform: translateY(-4px);
+   color:black;
+  font-weight: bold;
 }
 
 .contact-form button {
@@ -107,62 +192,12 @@
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .contact-form button:hover {
   background-color: #0056b3;
   transform: translateY(-4px);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .about-wrapper {
-    padding: 2rem;
-  }
-}
-.about-stats {
-  display: flex;
-  justify-content: space-evenly; /* spread evenly */
-  gap: 1rem;
-  margin-top: 0rem;
-}
-
-.stat-box {
-  flex: 1;
-  background: #f9f9f9;
-  padding: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.stat-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.stat-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 1rem;
-}
-
-.stat-box h3 {
-  color: #007bff;
-  margin-bottom: 1rem;
-}
-
-.stat-number {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #000;
-}
-
-.stat-subtext {
-  font-size: 1rem;
-  color: #000000;
 }
 
 /* Responsive */

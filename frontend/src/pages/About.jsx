@@ -7,12 +7,12 @@ export default function About() {
       <div className="about-header-box">
         <h1 className="about-title">PSIT Major Query Survey 
         </h1>
-        <p className="about-subtitle">From handmade surveys to online surveys</p>
+        <p className="about-subtitle">From handmade surveys to online surveys made by fellow @PSIT-AIML students</p>
       </div>
 
       {/* About section */}
       <div className="about-section">
-  <h2>What is College Survey?</h2>
+  <h2 style={{color:"black"}}>What is College Survey?</h2>
   <p>
     PSIT Major College Survey is a platform designed to collect and analyze feedback
     from students about campus life - from canteen facilities to cultural activities,
@@ -32,7 +32,7 @@ export default function About() {
 
       
       <div className="about-section">
-  <h2>How can you use it?</h2>
+  <h2 style={{color:"black"}}>How can you use it?</h2>
   <p>
     Simply navigate to the "Question" page, submit your feedback, and view
     real-time results on the "Result" page.
@@ -55,7 +55,7 @@ export default function About() {
     <span className="stat-subtext">Responses Collected</span>
   </div>
 
-  <div className="stat-box">
+  <div className="stat-box" >
     <img src="/users-icon.png" alt="Site Visitors Icon" className="stat-icon" />
     <h3><u>Total Site Visits</u></h3>
     <p className="stat-number">0</p>
@@ -66,7 +66,7 @@ export default function About() {
 
       {/* Contact form */}
       <div className="about-contact">
-        <h2 style={{ color: '#007bff' }}>Contact Us</h2>
+        <h2 style={{ color: '#000000ff' }}>Contact Us</h2>
         <form className="contact-form">
           <label>Name</label>
           <input type="text" placeholder="Your name" required />

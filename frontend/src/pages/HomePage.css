@@ -1,0 +1,242 @@
+.home-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 650;
+  color: #000;
+  position: relative;
+}
+
+.home-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00c6ff); /* gradient underline */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+  animation: slideIn 1s ease forwards;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-top: 1rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-buttons button {
+  background: #ffffff;
+  border: 2px solid #4b8af7;
+  padding: 0.8rem 1.5rem;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #000;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-buttons button:hover {
+  background: #4b8af7;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* Features section */
+.features-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  flex: 1;
+  min-width: 200px;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.434);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, #c7e0fbbe);
+}
+
+.feature-box h3 {
+  color: #4b8af7;
+  margin-bottom: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { width: 0; }
+  to { width: 100px; }
+}
+.home-subtitle {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 1rem;
+  text-align: left;
+  max-width: 800px;
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+
+.home-subtitle ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.home-subtitle li {
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-subtitle li:hover {
+  color: #4b8af7;
+  transform: translateX(5px);
+}
+
+/* Vision & Mission Section */
+/* Vision & Mission Section */
+.vision-mission {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 3rem auto;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+/* Vision box */
+.vision-box {
+  flex: 1;
+  min-width: 250px;
+  background: linear-gradient(135deg, #ffe0e0, #ffffff);
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-left: 6px solid #ff0000; /* distinct accent */
+  border-radius: 12px;
+  text-align: left;
+  transition: background 0.6s ease, transform 0.3s ease;
+}
+.vision-box:hover {
+  background: linear-gradient(135deg, #f8c0c0, #ffffff); /* dynamic gradient shift */
+  transform: scale(1.03); /* subtle zoom */
+}
+
+.vision-box h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.vision-box p {
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Mission box */
+.mission-box {
+  flex: 1;
+  min-width: 280px;
+  background: linear-gradient(135deg, #e8f9dc, #ffffff);
+  padding: 2rem;
+  border-left: 6px solid #4bf762; /* distinct accent */
+  border-radius: 12px;
+  text-align: left;
+    transition: background 0.6s ease, transform 0.3s ease;
+}
+.mission-box:hover {
+  background: linear-gradient(135deg, #d6f8bd, #ffffff); /* warm gradient shift */
+  transform: scale(1.03); /* subtle zoom */
+}
+.mission-box h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+}
+
+.mission-box p {
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.6;
+}
+/* Vision heading underline */
+.vision-box h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.vision-box h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff0000, #ff4d4d); /* red accent underline */
+  transition: width 0.4s ease;
+  transform-origin: left;
+    animation: underlineGrow 1s ease forwards;
+}
+
+.vision-box h2:hover::after {
+  width: 100%;
+}
+
+/* Mission heading underline */
+.mission-box h2 {
+  color: #000000;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.mission-box h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 3px;
+  background: linear-gradient(90deg, #4bf762, #2fbf4b); /* green accent underline */
+  transition: width 0.4s ease;
+  transform-origin: left;
+    animation: underlineGrow 1s ease forwards;
+}
+
+.mission-box h2:hover::after {
+  width: 100%;
+}
+/* Keyframes for underline animation */
+@keyframes underlineGrow {
+  from { width: 0; }
+  to { width: 100%; }
+}

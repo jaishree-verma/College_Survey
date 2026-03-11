@@ -6,6 +6,7 @@
   gap: 3rem;
   padding: 3rem;
   animation: fadeIn 1s ease-in-out;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Left side image */
