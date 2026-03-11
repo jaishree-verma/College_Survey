@@ -1,30 +1,24 @@
 const express = require("express");
-const { notifyCollegeSurvey, sendResponseToStudent } = require("../utils/mailer");
+const { sendSurveyMail } = require("../utils/mailer");
+const SurveyHistory = require("../models/SurveyHistory");
 
 const router = express.Router();
 
-router.post("/", async (req, res) => {
-  const { userId, question } = req.body;
+router.post("/send-query", async (req, res) => {
+  const { email, question } = req.body;
 
-  let answer;
+  try {
+    // Save query in MongoDB
+    await SurveyHistory.create({ email, question });
 
-  // Step 1: Try to find answer in FAQ (optional)
-  const faqAnswer = null; // replace with DB lookup if you want
+    // Send emails
+    await sendSurveyMail(email, question);
 
-  if (faqAnswer) {
-    answer = faqAnswer;
-  } else {
-    // Step 2: Unknown query → forward to college survey inbox
-    await notifyCollegeSurvey(userId, question);
-
-    // Step 3: Acknowledge student
-    answer = "Your query has been forwarded to the College Survey team. You will receive a response soon.";
+    res.json({ message: "Query processed. Check your email for details." });
+  } catch (error) {
+    console.error("Error processing query:", error);
+    res.status(500).json({ message: "Error processing query" });
   }
-
-  // Step 4: Send response to student
-  await sendResponseToStudent(userId, question, answer);
-
-  res.json({ message: "Query processed. Check your email for details." });
 });
 
 module.exports = router;

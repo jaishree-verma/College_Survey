@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer");
-const User = require("../models/User");
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -9,28 +8,41 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-// Send query to college survey email
-async function notifyCollegeSurvey(userId, question) {
-  const user = await User.findById(userId);
+async function sendSurveyMail(studentEmail, question) {
+  // Forward query to survey inbox
+  await transporter.sendMail({
+    from: studentEmail,
+    to: process.env.EMAIL_USER,
+    subject: "New Student Query",
+    text: `Query from: ${studentEmail}\n\n${question}`
+  });
 
+  // Send acknowledgment back to student
   await transporter.sendMail({
     from: process.env.EMAIL_USER,
-    to: "collegesurvey@yourdomain.com", // fixed college survey email
-    subject: `New Survey Query from ${user.email}`,
-    text: `Student ${user.email} asked: ${question}`
+    to: studentEmail,
+    subject: "Query Received - College Survey",
+    text: `Dear Student,\n\nWe have received your query:\n"${question}"\n\nOur team will respond soon.\n\nRegards,\nCollege Survey Team`
   });
 }
 
-// Send response back to student
-async function sendResponseToStudent(userId, question, answer) {
-  const user = await User.findById(userId);
+module.exports = { sendSurveyMail };
+async function sendContactMail(name, email, message) {
+  // Forward contact message to survey inbox
+  await transporter.sendMail({
+    from: email,
+    to: process.env.EMAIL_USER,
+    subject: "New Contact Form Submission",
+    text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  });
 
+  // Send acknowledgment back to sender
   await transporter.sendMail({
     from: process.env.EMAIL_USER,
-    to: user.email,
-    subject: "Your College Survey Response",
-    text: `You asked: ${question}\n\nAnswer: ${answer}`
+    to: email,
+    subject: "Contact Request Received - College Survey",
+    text: `Dear ${name},\n\nWe have received your message:\n"${message}"\n\nOur team will respond soon.\n\nRegards,\nCollege Survey Team`
   });
 }
 
-module.exports = { notifyCollegeSurvey, sendResponseToStudent };
+module.exports = { sendSurveyMail, sendContactMail };
