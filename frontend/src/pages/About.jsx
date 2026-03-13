@@ -210,8 +210,8 @@ export default function About() {
 
         {/* Processing box */}
         {processing && (
-          <div className="processing-box">
-            Your message is being processed. Thank you for waiting — you will soon receive a response through email.
+          <div className="processing-box" style={{ fontWeight:"bold",marginTop: "20px", padding: "10px", backgroundColor: "#c0c1c1ff", borderRadius: "5px" }}>
+            Your message is being processed. Thank you for waiting - you will soon receive a response through email.
           </div>
         )}
 
