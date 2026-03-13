@@ -374,10 +374,10 @@ export default function ResultPage() {
       
       <h1 className="result-title">Response Live Results</h1>
      <div className="live-banner">
-        🔄 Auto-updating every 2 seconds
-        <button className="update-btn" onClick={updateStats}>
+        🔄 Auto-updating in every 2 seconds
+        {/* <button className="update-btn" onClick={updateStats}>
           Update Now
-        </button>
+        </button> */}
       </div>
       {/* 🔹 Live Update Banner + Button */}
       
@@ -394,7 +394,7 @@ export default function ResultPage() {
           <p><strong>Campus Queries:</strong> {animatedCampus}+</p>
           <p><strong>Total Queries:</strong> {animatedTotal}+</p>
           <br />
-          <p><i>For every new query recieved, Results automatically updates in every 2 seconds, or click the button to refresh instantly.</i></p>
+          <p><i>For every new query recieved, Results automatically updates in every 2 seconds.</i></p>
         </div>
 
         <div className="pie-container">
