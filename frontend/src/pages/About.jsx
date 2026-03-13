@@ -218,6 +218,14 @@ export default function About() {
         {/* Final backend response */}
         {status && <p className="contact-message">{status}</p>}
       </div>
+      <div className="update-box">
+  <h3>Need Help?</h3>
+  <p>
+    For live updates or queries, please contact the college management.
+    <br />
+    📞 Phone: +91-XXXXXXXXXX
+  </p>
+</div>
     </div>
   );
 }
