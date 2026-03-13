@@ -242,20 +242,25 @@ export default function ResultPage() {
     coordination: 7,
   });
 
-  // 🔹 Auto update every 2 seconds (simulate new queries)
+  // 🔹 Manual update function
+  const updateStats = () => {
+    setStats((prev) => ({
+      ...prev,
+      canteen: prev.canteen + Math.floor(Math.random() * 2),
+      admission: prev.admission + Math.floor(Math.random() * 2),
+      infrastructure: prev.infrastructure + Math.floor(Math.random() * 2),
+      hostel: prev.hostel + Math.floor(Math.random() * 2),
+      extracurricular: prev.extracurricular + Math.floor(Math.random() * 2),
+      sports: prev.sports + Math.floor(Math.random() * 2),
+      environment: prev.environment + Math.floor(Math.random() * 2),
+      coordination: prev.coordination + Math.floor(Math.random() * 2),
+    }));
+  };
+
+  // 🔹 Auto update every 2 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setStats((prev) => ({
-        ...prev,
-        canteen: prev.canteen + Math.floor(Math.random() * 2),
-        admission: prev.admission + Math.floor(Math.random() * 2),
-        infrastructure: prev.infrastructure + Math.floor(Math.random() * 2),
-        hostel: prev.hostel + Math.floor(Math.random() * 2),
-        extracurricular: prev.extracurricular + Math.floor(Math.random() * 2),
-        sports: prev.sports + Math.floor(Math.random() * 2),
-        environment: prev.environment + Math.floor(Math.random() * 2),
-        coordination: prev.coordination + Math.floor(Math.random() * 2),
-      }));
+      updateStats();
     }, 2000);
     return () => clearInterval(interval);
   }, []);
@@ -264,12 +269,10 @@ export default function ResultPage() {
   const campusTotal =
     stats.canteen + stats.hostel + stats.extracurricular + stats.sports + stats.environment;
 
-  // 🔹 Animated numbers for summary box
   const animatedAcademic = useAnimatedNumber(academicTotal);
   const animatedCampus = useAnimatedNumber(campusTotal);
   const animatedTotal = useAnimatedNumber(academicTotal + campusTotal);
 
-  // 🔹 Animated values for Pie charts
   const academicData = {
     labels: ["Admission", "Infrastructure", "Teacher-Student Coordination"],
     datasets: [
@@ -368,10 +371,16 @@ export default function ResultPage() {
 
   return (
     <div className="result-wrapper">
+      
       <h1 className="result-title">Response Live Results</h1>
-
-      {/* 🔹 Live Update Banner */}
-      <div className="live-banner">🔄 Auto-updating every 2 seconds</div>
+     <div className="live-banner">
+        🔄 Auto-updating every 2 seconds
+        <button className="update-btn" onClick={updateStats}>
+          Update Now
+        </button>
+      </div>
+      {/* 🔹 Live Update Banner + Button */}
+      
 
       <div className="result-pies">
         <div className="pie-container">
@@ -385,7 +394,7 @@ export default function ResultPage() {
           <p><strong>Campus Queries:</strong> {animatedCampus}+</p>
           <p><strong>Total Queries:</strong> {animatedTotal}+</p>
           <br />
-          <p><i>For every new query & response send or receive, Result updates automatically in every 2 secs. </i></p>
+          <p><i>For every new query recieved, Results automatically updates in every 2 seconds, or click the button to refresh instantly.</i></p>
         </div>
 
         <div className="pie-container">
@@ -398,21 +407,9 @@ export default function ResultPage() {
         <Bar data={barData} options={barOptions} />
       </div>
 
-      {/* 🔹 Info Box */}
-      {/* <div className="update-box">
-        <h3>Need Help?</h3>
-        <p>
-          For live updates or queries, please contact the college management.
-          <br />
-          📞 Phone: +91-XXXXXXXXXX
-        </p>
-      </div> */}
-
-      {/* 🔹 Footer Note */}
       <footer className="dashboard-footer">
-  <u>Powered by College Survey System</u> - Last updated: {new Date().toLocaleString()}
-</footer>
-
+        <u>Powered by College Survey System</u> - Last updated: {new Date().toLocaleString()}
+      </footer>
     </div>
   );
 }
