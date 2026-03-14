@@ -1,18 +1,11 @@
-<h1 align="center">College Survey - Rasa + Hugging Face + JavaScript + React + Tailwind + MongoDB + NodeJS  </h1>
+<h1 align="center">College Survey -  JavaScript + React + Tailwind + MongoDB + NodeJS (MERN STACK) </h1>
 
 
-College Survey Application is an AI-driven, full-stack web application designed to streamline academic decision-making for undergraduate students. Its intuitive design and data visualization tools empower institutions to analyze student preferences at scale, achieving over 95% participation and 1,000+ unique engagements.</p>
+College Survey Application is a full‑stack web platform designed to simplify college management by enabling students to raise queries and get their doubts resolved efficiently. With a responsive interface and real‑time data handling, the system empowers institutions to manage student concerns, streamline communication, and provide transparent solutions. </p>
 
-<p>Leveraging a modern MERN architecture (MongoDB, Express, React, Node.js) and integrated with a Rasa-powered chatbot enhanced by Hugging Face NLP, the platform facilitates real-time, conversational data collection and personalized guidance.</p>
+<p>Leveraging a modern MERN architecture (MongoDB, Express, React, Node.js), the platform facilitates real-time, conversational data collection and personalized guidance with real time result updates.</p>
 
 ### What technologies being used :
-#### AI ChatBot (Rasa & Hugging Face)\
-     -> Rasa 
-        -> Used to build the conversational chatbot logic.
-        -> Handles intent recognition, dialogue flow, and custom actions.
-     -> Hugging Face
-        -> Integrated with Rasa to enhance natural language understanding.
-        -> Provides contextual, intelligent responses beyond rule-based replies
 #### Backend 
       -> Node.js + Express
          -> Hosts the backend server and REST APIs.
@@ -40,26 +33,18 @@ College Survey Application is an AI-driven, full-stack web application designed 
       -> cd ../backend
       -> npm install
       -> node server.js
-#### Chatbot 
-      -> cd ../rasa_bot
-      -> python -m venv rasaenv     (virtual environment)
-      -> .\rasaenv\Scripts\activate (# for windows)
-      -> pip install rasa           (Install Rasa % dependencies)
-      -> rasa train                 (Train model)
-      -> rasa run                   (Final run)
 
 
 ### Sumary 
       |     Category     |                             Description                                       |
       |------------------|-------------------------------------------------------------------------------|
       | Project Name     | College Survey                                                                |
-      | Purpose          | AI-powered chatbot platform for student guidance and survey visualization     |
-      | Tech Stack       | Rasa, Hugging Face, React, Tailwind CSS, Node.js, MongoDB                     |
+      | Purpose          | To help students raise their query directly wit college management            |
+      | Tech Stack       | MERN, Tailwind CSS, Express.js                                                |
       | Frontend         | React + Tailwind (Vite)                                                       |
       | Backend          | Node.js + Express, REST API, MongoDB for data storage                         |
-      | Chatbot          | Rasa framework with Hugging Face NLP, exposed via REST webhook                |
-      | Deployment       | Frontend: Vercel<br>Backend: Render/Railway<br>Chatbot: Local/VM/ngrok        |
-      | Users Served     | 250+ Engineering Science students                                             |
+      | Deployment       | Frontend: Vercel<br>Backend: Render/Railway<br>                               |
+      | Users Served     | 1000+ Engineering Science students                                            |
       | Engagement       | 95% class participation, 1000+ unique visits                                  |
       | Key Features     | Conversational survey, real-time insights, personalized academic guidance     |
       |------------------|-------------------------------------------------------------------------------|
