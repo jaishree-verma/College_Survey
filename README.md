@@ -40,7 +40,7 @@ College Survey Application is a full‑stack web platform designed to simplify c
       |------------------|-------------------------------------------------------------------------------|
       | Project Name     | College Survey                                                                |
       | Purpose          | To help students raise their query directly wit college management            |
-      | Tech Stack       | MERN, Tailwind CSS, Express.js                                                |
+      | Tech Stack       | MERN, Tailwind CSS, Express.js, JavaScript                                    |
       | Frontend         | React + Tailwind (Vite)                                                       |
       | Backend          | Node.js + Express, REST API, MongoDB for data storage                         |
       | Deployment       | Frontend: Vercel<br>Backend: Render/Railway<br>                               |
