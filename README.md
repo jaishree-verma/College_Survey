@@ -1,7 +1,7 @@
 <h1 align="center">College Survey -  JavaScript + React + Tailwind + MongoDB + NodeJS (MERN STACK) </h1>
 
 
-College Survey Application is a full‑stack web platform designed to simplify college management by enabling students to raise queries and get their doubts resolved efficiently. With a responsive interface and real‑time data handling, the system empowers institutions to manage student concerns, streamline communication, and provide transparent solutions. </p>
+College Survey Application is a full‑stack web platform designed to simplify college management by enabling students to raise queries and get their doubts resolved efficiently. With a responsive interface and real‑time data handling, the system empowers institutions to manage student concerns, streamline communication, and provide transparent solutions with complete privacy for each user.  </p>
 
 <p>Leveraging a modern MERN architecture (MongoDB, Express, React, Node.js), the platform facilitates real-time, conversational data collection and personalized guidance with real time result updates.</p>
 
