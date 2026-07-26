@@ -30,11 +30,11 @@ async function sendSurveyMail(studentEmail, question, category, answer) {
   }
 
   try {
-    // 1. Direct email to the student
+    // 1. Direct email to the student sent directly from collegesurvey2025@gmail.com
     const studentMailOptions = {
-      from: `"PSIT College Survey Support" <${EMAIL_USER}>`,
+      from: `"PSIT College Survey Support" <collegesurvey2025@gmail.com>`,
       to: studentEmail,
-      replyTo: COLLEGE_SURVEY_EMAIL,
+      replyTo: "collegesurvey2025@gmail.com",
       subject: `Your Query Answered - PSIT College Survey [${category || "General"}]`,
       text: `Dear Student,\n\nThank you for submitting your query through the PSIT College Survey portal.\n\n----------------------------------------\nCategory: ${category || "General"}\nStudent Email: ${studentEmail}\nYour Question:\n"${question}"\n----------------------------------------\n\n${answer}\n\nIf you have further questions, simply reply directly to this email.\n\nBest regards,\nPSIT College Survey & Support Team\nOfficial Portal: https://www.psit.ac.in/`,
       html: `
