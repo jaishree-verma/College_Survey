@@ -34,7 +34,8 @@ export default function QueryForm() {
       const displayName = isAnonymous ? "Anonymous Student" : (studentName || "Student");
       const fullQuestionText = `[Inquiry Type: ${inquiryType}] [From: ${displayName}] ${question}`;
       
-      const res = await axios.post("http://localhost:5000/api/survey/send-query", {
+      const API_BASE = window.location.hostname === "localhost" ? "http://localhost:5000" : "https://college-survey-backend.onrender.com";
+      const res = await axios.post(`${API_BASE}/api/survey/send-query`, {
         email,
         question: fullQuestionText,
         category

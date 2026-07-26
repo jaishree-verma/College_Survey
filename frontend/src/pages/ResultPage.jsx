@@ -82,10 +82,12 @@ export default function ResultPage() {
     return INITIAL_SAMPLE_QUERIES;
   });
 
+  const API_BASE = typeof window !== "undefined" && window.location.hostname === "localhost" ? "http://localhost:5000" : "https://college-survey-backend.onrender.com";
+
   // Fetch initial & updated results from backend
   const fetchBackendResults = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/survey/results");
+      const res = await axios.get(`${API_BASE}/api/survey/results`);
       if (Array.isArray(res.data) && res.data.length > 0) {
         const reversed = [...res.data].reverse();
         setQueriesList((prev) => {
@@ -140,7 +142,7 @@ export default function ResultPage() {
     }, 3000);
 
     // 2. Real-time Socket.IO Connection for instant push
-    const socket = io("http://localhost:5000");
+    const socket = io(API_BASE);
 
     socket.on("newSurvey", (newSurvey) => {
       setQueriesList((prev) => {

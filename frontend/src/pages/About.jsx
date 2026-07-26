@@ -36,7 +36,8 @@ export default function About() {
     setStatus("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/contact/send-contact", {
+      const API_BASE = window.location.hostname === "localhost" ? "http://localhost:5000" : "https://college-survey-backend.onrender.com";
+      const res = await axios.post(`${API_BASE}/api/contact/send-contact`, {
         name,
         email,
         message: messageText
