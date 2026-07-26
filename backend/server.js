@@ -29,6 +29,20 @@ app.use("/api/survey", surveyRoutes);
 const contactRoutes = require("./routes/contact");
 app.use("/api/contact", contactRoutes);
 
+// Health check route for Render
+app.get("/", (req, res) => {
+  res.json({
+    status: "online",
+    message: "PSIT College Survey Backend & Email Dispatch Server Active",
+    version: "1.0.0",
+    endpoints: {
+      survey: "/api/survey/results",
+      sendQuery: "/api/survey/send-query",
+      contact: "/api/contact/send-contact"
+    }
+  });
+});
+
 // 🔹 Stats route
 app.get("/api/stats", async (req, res) => {
   try {
