@@ -85,7 +85,7 @@ export default function QueryForm() {
               </li>
               <li>
                 <span className="guide-bullet">•</span>
-                <span><strong>Important: Please check both your Inbox and Spam/Junk folder for response delivery.</strong></span>
+                <span style={{ color: '#1d4ed8', fontWeight: '700' }}>Check your Inbox and Spam/Junk folder for incoming email answers.</span>
               </li>
             </ul>
           </div>
