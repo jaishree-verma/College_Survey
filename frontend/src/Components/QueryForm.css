@@ -44,13 +44,19 @@
   background: #ffffff;
   border-radius: 16px;
   border: 1px solid #dbeafe;
-  padding: 0.5rem;
+  padding: 0.6rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .query-image-wrapper img {
   width: 100%;
   height: auto;
+  max-height: 260px;
+  object-fit: contain;
   border-radius: 12px;
   display: block;
 }
