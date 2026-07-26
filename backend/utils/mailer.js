@@ -7,7 +7,9 @@ const EMAIL_USER = process.env.EMAIL_USER || COLLEGE_SURVEY_EMAIL;
 const EMAIL_PASS = (process.env.EMAIL_PASS || "tcxmeqhsjlxpmcpd").replace(/\s+/g, "");
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 465,
+  secure: true, // use SSL
   auth: {
     user: EMAIL_USER,
     pass: EMAIL_PASS
