@@ -86,7 +86,7 @@ router.post("/send-query", async (req, res) => {
 
     // Return success response to client
     return res.json({
-      message: "Query processed and stored! Your answer has been generated and sent to your email.",
+      message: "Query processed and stored! Your answer has been generated and sent to your email (Please check your Inbox and Spam/Junk folder).",
       answer: answer
     });
   } catch (error) {
