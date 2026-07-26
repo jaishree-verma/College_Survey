@@ -81,7 +81,7 @@ export default function QueryForm() {
               </li>
               <li>
                 <span className="guide-bullet">•</span>
-                <span>Resolutions are dispatched instantly from collegesurvey2025@gmail.com.</span>
+                <span>Resolutions are dispatched instantly from collegesurvey2025@gmail.com. Please check your Inbox and Spam/Junk folder.</span>
               </li>
             </ul>
           </div>
@@ -193,7 +193,7 @@ export default function QueryForm() {
           {receivedAnswer && (
             <div className="answer-preview-card">
               <div className="answer-card-header">
-                <span className="dispatch-badge">Dispatched to Email</span>
+                <span className="dispatch-badge">Dispatched to Email (Check Inbox & Spam/Junk)</span>
                 <strong>Resolution Answer Preview</strong>
               </div>
               <pre className="answer-text">
