@@ -1,45 +1,134 @@
-.footer {
-  background: #c7e0fbbe;
-  padding: 0.5rem;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #000;
-  font-weight: bold;
-  margin-top: 1rem;
- 
-  /* border-top: 2px solid #4b8af7; */
+/* 4-Column Footer CSS Styling */
+.site-footer {
+  background-color: #0f172a;
+  color: #f8fafc;
+  width: 100%;
+  margin-top: auto;
+  border-top: 2px solid #1e3a8a;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+  gap: 2.5rem;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer-brand .brand-badge {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 8px;
+}
+
+.footer-brand .brand-text {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.footer-desc {
+  color: #94a3b8;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.college-tag {
+  display: inline-block;
+  color: #60a5fa;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.footer-heading {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 0.4rem 0;
+  letter-spacing: -0.2px;
 }
 
 .footer-links {
-  margin-top: 0rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 .footer-links a {
+  color: #cbd5e1;
   text-decoration: none;
-  color: #000;
-  font-weight: 600;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
-  color: #4b8af7;
-  transform: translateY(-8px) scale(1.02);
-}
-button {
-  background: #ffffff;
-  border: 2px solid #ffffff;
-  padding: 0.5rem 0.5rem;
-  border-radius: 10px;
-  font-weight: bold;
-  color: #000000;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #60a5fa;
 }
 
-button:hover {
-  background-color: #ffffff;
-  color: #4b8af7;
+.footer-info {
+  color: #cbd5e1;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.psit-link {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.psit-link:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
 }
