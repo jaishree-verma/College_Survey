@@ -81,7 +81,11 @@ export default function QueryForm() {
               </li>
               <li>
                 <span className="guide-bullet">•</span>
-                <span>Resolutions are dispatched instantly from collegesurvey2025@gmail.com. <strong>Please check your Inbox and Spam/Junk folder.</strong></span>
+                <span>Resolutions are dispatched instantly from collegesurvey2025@gmail.com.</span>
+              </li>
+              <li>
+                <span className="guide-bullet">•</span>
+                <span><strong>Important: Please check both your Inbox and Spam/Junk folder for response delivery.</strong></span>
               </li>
             </ul>
           </div>
