@@ -8,7 +8,6 @@ A full-stack web application built for Pranveer Singh Institute of Technology (P
 
 - **Frontend Website**: [https://collegesurveyapplication.vercel.app/](https://collegesurveyapplication.vercel.app/)
 - **Backend API**: [https://college-survey-backend.onrender.com/](https://college-survey-backend.onrender.com/)
-- **GitHub Repository**: [https://github.com/jaishree-verma/College_Survey](https://github.com/jaishree-verma/College_Survey)
 
 ---
 
